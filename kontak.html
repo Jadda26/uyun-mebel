@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- KONTAK. Alamat, jam buka, dan media sosial diambil dari js/config.js lewat js/kontak.js -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontak dan Lokasi – Uyun Mebel</title>
+  <meta name="description" content="Hubungi Uyun Mebel lewat WhatsApp. Alamat workshop, jam buka, dan media sosial.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="bagian">
+    <div class="wadah">
+      <div class="judul-bagian">
+        <h1>Kontak dan Lokasi</h1>
+        <p>Cara tercepat menghubungi kami adalah lewat WhatsApp.</p>
+      </div>
+
+      <div class="kontak-grid">
+        <div class="kotak">
+          <h3>WhatsApp</h3>
+          <p>Tanya model, ukuran, atau harga langsung dengan kami.</p>
+          <a class="tombol tombol-wa" id="wa-kontak" href="#" target="_blank" rel="noopener">Chat WhatsApp</a>
+        </div>
+        <div class="kotak">
+          <h3>Workshop</h3>
+          <p id="alamat"></p>
+          <p class="pudar" id="jam"></p>
+          <a class="tombol tombol-garis" id="peta" href="#" target="_blank" rel="noopener">Buka di Google Maps</a>
+        </div>
+        <div class="kotak">
+          <h3>Media sosial</h3>
+          <p>Lihat hasil kerja terbaru kami.</p>
+          <p id="sosial"></p>
+        </div>
+      </div>
+
+      <div class="catatan" style="margin-top:28px" id="area-layanan"></div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/kontak.js"></script>
+</body>
+</html>

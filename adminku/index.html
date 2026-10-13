@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- PANEL ADMIN: dibuka lewat namawebsite.com/adminku/
+     Semua logika ada di ../js/admin.js. Halaman ini tidak didaftarkan ke Google (noindex). -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Admin – Uyun Mebel</title>
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+  <!-- Pesan jika database belum disambungkan -->
+  <div class="login" id="belum-siap" hidden>
+    <h1>Database belum disambungkan</h1>
+    <p>Isi <code>supabaseUrl</code> dan <code>supabaseKey</code> di file <code>js/config.js</code>. Langkahnya ada di README.md bagian "Setup Supabase".</p>
+  </div>
+
+  <!-- Halaman login -->
+  <form class="login" id="form-login" hidden>
+    <img src="../assets/logo.svg" alt="" width="72" height="72">
+    <h1>Login Admin</h1>
+    <label for="username">Username</label>
+    <input id="username" autocomplete="username" required>
+    <label for="password">Password</label>
+    <input id="password" type="password" autocomplete="current-password" required>
+    <button class="btn utama" type="submit">Masuk</button>
+    <p class="pesan" id="pesan-login" role="alert"></p>
+  </form>
+
+  <!-- Panel utama (tampil setelah login) -->
+  <div id="panel" hidden>
+    <header class="atas">
+      <strong>Admin Uyun Mebel</strong>
+      <span>
+        <a href="../index.html" target="_blank">Lihat website</a>
+        <button class="btn kecil" id="keluar">Keluar</button>
+      </span>
+    </header>
+
+    <main class="isi">
+      <div class="baris-judul">
+        <h1>Daftar Produk</h1>
+        <button class="btn utama" id="tambah">+ Tambah produk</button>
+      </div>
+      <p class="pesan" id="pesan-panel" role="status"></p>
+      <div id="daftar"></div>
+    </main>
+  </div>
+
+  <!-- Formulir tambah / ubah produk -->
+  <div class="lapisan" id="lapisan" hidden>
+    <form class="dialog" id="form-produk">
+      <h2 id="judul-form">Tambah Produk</h2>
+
+      <label for="f-nama">Nama produk *</label>
+      <input id="f-nama" required>
+
+      <div class="dua">
+        <div>
+          <label for="f-kategori">Kategori *</label>
+          <select id="f-kategori" required>
+            <option value="kasur">Kasur</option>
+            <option value="sofa">Sofa</option>
+            <option value="mebel">Mebel</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-status">Status *</label>
+          <select id="f-status">
+            <option value="ready">Ready</option>
+            <option value="pre-order">Pre-order</option>
+            <option value="habis">Habis</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="dua">
+        <div>
+          <label for="f-harga">Harga (angka saja, kosongkan jika "hubungi kami")</label>
+          <input id="f-harga" type="number" min="0" inputmode="numeric" placeholder="contoh: 2500000">
+        </div>
+        <label class="centang"><input type="checkbox" id="f-mulai"> Tampilkan "Mulai dari"</label>
+      </div>
+
+      <div class="dua">
+        <div><label for="f-ukuran">Ukuran</label><input id="f-ukuran" placeholder="160 x 200 cm"></div>
+        <div><label for="f-warna">Pilihan warna</label><input id="f-warna" placeholder="Abu, krem, cokelat"></div>
+      </div>
+
+      <label for="f-bahan">Bahan</label>
+      <input id="f-bahan" placeholder="Kain oscar, rangka kayu jati">
+
+      <label for="f-deskripsi">Deskripsi</label>
+      <textarea id="f-deskripsi" rows="4"></textarea>
+
+      <label for="f-foto">Foto (boleh pilih beberapa; foto pertama jadi foto utama)</label>
+      <input id="f-foto" type="file" accept="image/*" multiple>
+      <div class="foto-daftar" id="foto-daftar"></div>
+
+      <div class="dua">
+        <label class="centang"><input type="checkbox" id="f-unggulan"> Tampilkan di beranda (unggulan)</label>
+        <label class="centang"><input type="checkbox" id="f-tampil" checked> Tampilkan di website</label>
+      </div>
+
+      <p class="pesan" id="pesan-form" role="alert"></p>
+      <div class="aksi">
+        <button type="button" class="btn" id="batal">Batal</button>
+        <button type="submit" class="btn utama" id="simpan">Simpan</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Library Supabase (untuk login, database, dan penyimpanan foto) -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="../js/config.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>

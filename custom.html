@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- PESANAN CUSTOM. Formulir ini tidak menyimpan data; isinya disusun jadi pesan WhatsApp oleh js/custom.js -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pesanan Custom – Uyun Mebel</title>
+  <meta name="description" content="Pesan kasur, sofa, atau mebel sesuai ukuran, bahan, dan warna yang Anda inginkan. Uyun Mebel melayani Kabupaten Tegal.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="bagian">
+    <div class="wadah">
+      <div class="judul-bagian">
+        <h1>Pesanan Custom</h1>
+        <p>Ceritakan yang Anda butuhkan. Setelah menekan tombol di bawah, WhatsApp terbuka dengan pesan yang sudah terisi.</p>
+      </div>
+
+      <form class="form" id="form-custom">
+        <div class="form-dua">
+          <div>
+            <label for="jenis">Jenis</label>
+            <select class="input" id="jenis" required>
+              <option value="">Pilih jenis…</option>
+              <option>Kasur</option>
+              <option>Sofa</option>
+              <option>Lemari</option>
+              <option>Meja</option>
+              <option>Kursi</option>
+              <option>Lainnya</option>
+            </select>
+          </div>
+          <div>
+            <label for="ukuran">Ukuran</label>
+            <input class="input" id="ukuran" placeholder="Contoh: 160 x 200 cm">
+          </div>
+        </div>
+        <div class="form-dua">
+          <div>
+            <label for="bahan">Bahan</label>
+            <input class="input" id="bahan" placeholder="Contoh: kayu jati, kain velvet">
+          </div>
+          <div>
+            <label for="warna">Warna</label>
+            <input class="input" id="warna" placeholder="Contoh: abu-abu">
+          </div>
+        </div>
+        <div>
+          <label for="catatan">Catatan tambahan</label>
+          <textarea class="input" id="catatan" rows="4" placeholder="Model yang diinginkan, jumlah, kapan dibutuhkan, dan lainnya"></textarea>
+        </div>
+        <button class="tombol tombol-wa" type="submit">Kirim lewat WhatsApp</button>
+        <p class="pudar" id="area-layanan"></p>
+      </form>
+
+      <div class="catatan" style="max-width:640px;margin-top:28px">
+        Tips: setelah WhatsApp terbuka, Anda bisa melampirkan foto contoh model atau foto ruangan agar hasilnya lebih pas.
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- BERANDA. Teks di sini bisa diubah langsung. Daftar produk unggulan diisi otomatis oleh js/home.js -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Uyun Mebel – Kasur, Sofa, dan Mebel Custom Kabupaten Tegal</title>
+  <meta name="description" content="Uyun Mebel membuat kasur, sofa, dan mebel buatan sendiri. Bisa dipesan sesuai ukuran, bahan, dan warna. Melayani wilayah Kabupaten Tegal.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main>
+    <!-- Bagian paling atas -->
+    <section class="hero">
+      <div class="wadah hero-isi">
+        <span class="label-kecil">Buatan sendiri · Bisa custom</span>
+        <h1>Kasur, sofa, dan mebel sesuai keinginan Anda</h1>
+        <p>Pilih model yang sudah ada, atau pesan sesuai ukuran, bahan, dan warna yang Anda mau. Semua dibuat sendiri di workshop kami.</p>
+        <div class="hero-tombol">
+          <a class="tombol tombol-utama" href="katalog.html">Lihat Katalog</a>
+          <a class="tombol tombol-wa" id="wa-hero" href="#" target="_blank" rel="noopener">Tanya via WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kategori -->
+    <section class="bagian">
+      <div class="wadah">
+        <div class="judul-bagian"><h2>Apa yang Anda cari?</h2></div>
+        <div class="grid grid-3">
+          <a class="kartu kategori-kartu" href="katalog.html?kategori=kasur"><h3>Kasur</h3><p class="pudar">Kasur busa dan pegas, semua ukuran</p></a>
+          <a class="kartu kategori-kartu" href="katalog.html?kategori=sofa"><h3>Sofa</h3><p class="pudar">Sofa L, 2 dudukan, 3 dudukan</p></a>
+          <a class="kartu kategori-kartu" href="katalog.html?kategori=mebel"><h3>Mebel</h3><p class="pudar">Lemari, meja, kursi, dan lainnya</p></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk unggulan (diisi otomatis oleh js/home.js) -->
+    <section class="bagian tua">
+      <div class="wadah">
+        <div class="judul-bagian">
+          <h2>Pilihan Kami</h2>
+          <p>Contoh hasil kerja yang bisa Anda jadikan acuan. Ukuran dan warna tetap bisa disesuaikan.</p>
+        </div>
+        <div class="grid" id="daftar-unggulan"><p class="kosong">Memuat produk…</p></div>
+        <p style="text-align:center;margin-top:28px"><a class="tombol tombol-garis" href="katalog.html">Lihat semua produk</a></p>
+      </div>
+    </section>
+
+    <!-- Cara pesan -->
+    <section class="bagian">
+      <div class="wadah">
+        <div class="judul-bagian"><h2>Cara Memesan</h2><p>Tanpa ribet, semua dibicarakan langsung lewat WhatsApp.</p></div>
+        <div class="langkah">
+          <div><h3>Pilih model</h3><p>Lihat katalog, atau ceritakan model yang Anda inginkan di halaman Pesanan Custom.</p></div>
+          <div><h3>Chat WhatsApp</h3><p>Tekan tombol pesan. WhatsApp terbuka dengan pesan yang sudah terisi, tinggal kirim.</p></div>
+          <div><h3>Diskusi dan sepakat</h3><p>Kita bahas ukuran, bahan, warna, harga akhir, lama pengerjaan, dan pengiriman.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section class="bagian tua">
+      <div class="wadah">
+        <div class="judul-bagian"><h2>Kenapa Uyun Mebel?</h2></div>
+        <div class="keunggulan">
+          <div><h3>Dibuat sendiri</h3><p>Diproduksi langsung di workshop, jadi kualitas bisa dijaga dan diawasi.</p></div>
+          <div><h3>Bisa custom</h3><p>Ukuran, bahan, dan warna menyesuaikan ruangan dan selera Anda.</p></div>
+          <div><h3>Bicara langsung</h3><p>Tanya dan nego langsung dengan pembuatnya lewat WhatsApp.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ajakan -->
+    <section class="cta">
+      <div class="wadah">
+        <h2>Punya model atau ukuran sendiri?</h2>
+        <p id="area-layanan"></p>
+        <a class="tombol tombol-wa" href="custom.html">Mulai Pesanan Custom</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

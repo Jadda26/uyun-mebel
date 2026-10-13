@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- DETAIL PRODUK. Satu halaman ini dipakai untuk semua produk: produk.html?id=... diisi oleh js/produk.js -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detail Produk – Uyun Mebel</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="bagian">
+    <div class="wadah">
+      <div id="isi-produk"><p class="kosong">Memuat produk…</p></div>
+    </div>
+  </main>
+
+  <section class="bagian tua" id="bagian-terkait" hidden>
+    <div class="wadah">
+      <div class="judul-bagian"><h2>Produk Lainnya</h2></div>
+      <div class="grid" id="daftar-terkait"></div>
+    </div>
+  </section>
+
+  <footer id="footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/produk.js"></script>
+</body>
+</html>

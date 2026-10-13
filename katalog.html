@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- KATALOG. Daftar, filter, dan pencarian dikerjakan oleh js/katalog.js -->
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Katalog Kasur, Sofa, dan Mebel – Uyun Mebel</title>
+  <meta name="description" content="Katalog kasur, sofa, dan mebel buatan Uyun Mebel. Pesan langsung lewat WhatsApp.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="header"></header>
+
+  <main class="bagian">
+    <div class="wadah">
+      <div class="judul-bagian">
+        <h1>Katalog Produk</h1>
+        <p>Semua model bisa disesuaikan ukuran, bahan, dan warnanya.</p>
+      </div>
+
+      <div class="filter" id="filter-kategori">
+        <button class="chip aktif" data-kategori="semua">Semua</button>
+        <button class="chip" data-kategori="kasur">Kasur</button>
+        <button class="chip" data-kategori="sofa">Sofa</button>
+        <button class="chip" data-kategori="mebel">Mebel</button>
+      </div>
+      <div class="filter">
+        <input class="input" id="cari" type="search" placeholder="Cari produk…" aria-label="Cari produk">
+        <select class="input" id="urut" aria-label="Urutkan">
+          <option value="baru">Terbaru</option>
+          <option value="murah">Harga terendah</option>
+          <option value="mahal">Harga tertinggi</option>
+        </select>
+      </div>
+
+      <div class="grid" id="daftar-produk"><p class="kosong">Memuat produk…</p></div>
+    </div>
+  </main>
+
+  <footer id="footer"></footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/demo-data.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/katalog.js"></script>
+</body>
+</html>

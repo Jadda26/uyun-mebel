@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Logo Uyun Mebel">
+  <!-- Logo bulat Uyun Mebel (sementara, bisa diganti logo asli dengan nama file yang sama) -->
+  <circle cx="100" cy="100" r="96" fill="#6B4F3A"/>
+  <circle cx="100" cy="100" r="86" fill="none" stroke="#FAF6F0" stroke-width="2"/>
+  <!-- siluet sofa -->
+  <g fill="#FAF6F0">
+    <rect x="52" y="62" width="96" height="40" rx="14"/>
+    <rect x="38" y="84" width="26" height="42" rx="12"/>
+    <rect x="136" y="84" width="26" height="42" rx="12"/>
+    <rect x="52" y="96" width="96" height="30" rx="10"/>
+    <rect x="56" y="126" width="8" height="12" rx="3"/>
+    <rect x="136" y="126" width="8" height="12" rx="3"/>
+  </g>
+  <rect x="68" y="72" width="64" height="4" rx="2" fill="#8A9A7B"/>
+  <text x="100" y="164" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="19" font-weight="700" letter-spacing="3" fill="#FAF6F0">UYUN MEBEL</text>
+</svg>
