@@ -14,7 +14,7 @@ const CONFIG = {
   // ---- WhatsApp ----
   // Tulis dalam format internasional: awali 62, TANPA 0 di depan, TANPA tanda + atau spasi.
   // Contoh: 08123456789  ->  628123456789
-  whatsapp: "628123456789",                         // GANTI dengan nomor asli klien
+  whatsapp: "6281919523112",                         // GANTI dengan nomor asli klien
 
   // Isi pesan otomatis saat pelanggan menekan tombol "Pesan".
   // {nama_produk}, {kategori}, {url_produk} akan diisi otomatis.
